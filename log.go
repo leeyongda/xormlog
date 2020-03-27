@@ -25,6 +25,11 @@ var logrus2xormlogLevel = map[logrus.Level]xormlog.LogLevel{
 	logrus.ErrorLevel: xormlog.LOG_ERR,
 }
 
+var (
+	// 判断下接口是否都被实现了
+	_ xormlog.ContextLogger = &LogCtx{}
+)
+
 func NewLogCtx(l *logrus.Logger) *LogCtx {
 	return &LogCtx{logger: l}
 }
