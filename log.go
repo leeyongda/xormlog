@@ -34,7 +34,7 @@ func (l *LogCtx) BeforeSQL(ctx xormlog.LogContext) {}
 func (l *LogCtx) AfterSQL(ctx xormlog.LogContext) {
 	fullSqlStr, err := builder.ConvertToBoundSQL(ctx.SQL, ctx.Args)
 	if err != nil {
-		l.logger.Errorf("[SQL] %v - %v", fullSqlStr, ctx.ExecuteTime)
+		l.logger.Errorf("[SQL] %v %v - %v", ctx.SQL, ctx.Args, ctx.ExecuteTime)
 	} else {
 		l.logger.Infof("[SQL] %v - %v", fullSqlStr, ctx.ExecuteTime)
 	}
