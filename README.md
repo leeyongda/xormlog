@@ -6,6 +6,8 @@ https://github.com/sirupsen/logrus
 > ### go get xorm.io/xorm@v1.0.0
 
 ### 简单使用教程
+![golang demo](demo.png)
+
 ```golang
 func NewMySQL() *xorm.Engine {
 	engine, err := xorm.NewEngine("mysql", "dsn")
@@ -23,4 +25,3 @@ func NewMySQL() *xorm.Engine {
 }
 
 ```
-![golang demo](demo.png)
