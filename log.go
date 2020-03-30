@@ -26,7 +26,7 @@ var logrus2xormlogLevel = map[logrus.Level]xormlog.LogLevel{
 }
 
 var (
-	// 判断下接口是否都被实现了
+	// 判断下ContextLogger接口是否都被实现了
 	_ xormlog.ContextLogger = &LogCtx{}
 )
 
