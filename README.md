@@ -14,7 +14,7 @@ func NewMySQL() *xorm.Engine {
     }
     logs := logrus.New()
     // 使用自定义日志实现
-	logctx := xormlog.NewLogCtx(logs)
+    logctx := xormlog.NewLogCtx(logs)
     engine.SetLogger(logctx)
     // 需要开启sql输出
     engine.ShowSQL(true)
