@@ -23,4 +23,4 @@ func NewMySQL() *xorm.Engine {
 }
 
 ```
-![golang demo](blob:https://carbon.now.sh/b4223179-7416-4396-9753-28272931814e)
+![golang demo](demo.png)
