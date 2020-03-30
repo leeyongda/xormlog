@@ -6,7 +6,8 @@ https://github.com/sirupsen/logrus
 > ### go get xorm.io/xorm@v1.0.0
 
 ### 简单使用教程
-![golang demo](demo.png)
+<img src=demo.png width=400 height=250 />
+<!-- ![golang demo](demo.png =100x100) -->
 
 ```golang
 func NewMySQL() *xorm.Engine {
